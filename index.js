@@ -28,17 +28,28 @@ function playRound() {
         result = ("You lost! The computer chose " + resultComputer + ", which beats " + playerSelection + ".");
     } 
     resultDisplay.innerHTML = result
+    playerScore.innerHTML = playerPoint
+    computerScore.innerHTML = computerPoint
+
+    if (playerPoint >= 5) {
+        resultDisplay.innerHTML = result + " Game over! You reached 5 points before the computer!"
+        rockBtn.disabled = true;
+        paperBtn.disabled = true;
+        scissorsBtn.disabled = true;
+        } else if (computerPoint >= 5) {
+        resultDisplay.innerHTML = result + " Game over, the computer has reached 5 points first."
+       rockBtn.disabled = true;
+       paperBtn.disabled = true;
+       scissorsBtn.disabled = true;
+        }
 }
+
 
 function gameOver() {
     return playerPoint === 5 || computerPoint === 5
 }
 
-// RESTARTS GAME
-function resetGame() {
-    //add button here
-    window.location.reload();
-}
+
 
 
 // UI
@@ -48,6 +59,9 @@ const resultDisplay = document.getElementById('result')
 const rockBtn = document.getElementById('rock');
 const paperBtn = document.getElementById('paper');
 const scissorsBtn = document.getElementById('scissors');
+const resetBtn = document.getElementById('reset')
+const playerScore = document.getElementById('player-score')
+const computerScore = document.getElementById('computer-score')
 let playerChoice
 
 rockBtn.addEventListener("click", (e) => {
@@ -66,3 +80,9 @@ scissorsBtn.addEventListener("click", (e) => {
 rockBtn.addEventListener("click", playRound)
 paperBtn.addEventListener("click", playRound)
 scissorsBtn.addEventListener("click", playRound)
+
+
+// RESTARTS GAME
+resetBtn.addEventListener("click", () => {
+    window.location.reload();
+});
