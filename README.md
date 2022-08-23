@@ -3,6 +3,7 @@ live:
 Odin Project rock paper scissors game assignment
 
 What I learned
+    - how to create, merge, and delete branch on git
     - how to randomly select an item out of an array
     - how to disable buttons
     - how to utilize forloop
