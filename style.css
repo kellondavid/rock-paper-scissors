@@ -1,0 +1,98 @@
+.nav {
+    background-color: #2A9D8F;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-top: -25px;
+    margin-left: -10px;
+    margin-right: -10px;
+    text-align: center;
+    font-family: 'Sacramento', cursive;
+    font-size: 1.5rem;
+}
+
+body {
+    background-color: #e9c46a;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.2rem;
+    color: #264653;
+    
+}
+
+.rule {
+    text-align: center;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.icon {
+    color: #264653;
+}
+
+.icon:hover {
+    color: #e76f51;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;    
+    gap: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.score-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 150px;
+    font-size: 1.8rem;
+    color: #2A9D8F;
+}
+
+.results {
+    margin: auto;
+    text-align: center;
+    width: 600px;
+}
+
+
+.btns {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+}
+
+.restart {
+    color: #e63946;
+    margin-left: auto;
+}
+
+.restart:hover{
+    color: #f1faee;
+}
+
+.footer {
+    color: white;
+    background-color: #e76f51;
+    margin-top: 1px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: -20px;
+    text-align: center;
+}
+
+.fa-github:hover {
+  transform: rotate(360deg);
+}
+
+.fa-github {
+    color: white;
+    transition: transform 0.3s ease-in-out;
+}
