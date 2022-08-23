@@ -25,6 +25,7 @@ body {
 }
 
 .rule {
+    margin-top: 50px;
     text-align: center;
 }
 
@@ -75,7 +76,7 @@ body {
 
 .restart {
     color: #e63946;
-    margin-left: auto;
+    margin: auto;
 }
 
 .restart:hover{
