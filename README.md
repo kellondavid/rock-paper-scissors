@@ -8,3 +8,4 @@ What I learned
    - how to disable buttons
    - how to utilize forloop
    - how to center a block level element that has more than 100% of width
+   - how to push footer all the way down, utilizing flexbox
